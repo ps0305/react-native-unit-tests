@@ -30,3 +30,12 @@
     ]
   }
   ```
+* `preset`: The preset is a node environment that mimics the environment of a React Native app. Because it doesn’t load any DOM or browser APIs, it greatly improves Jest’s startup time.
+
+* `cacheDirectory`: It helps you greatly improve the test speed. It does so by creating cache of compiled modules so that next time it doesn’t have to compile the node_modules while running tests.
+
+* `coveragePathIgnorePatterns`: Define the files which want to skip for coverage reports.
+
+* `coverageThreshold`: Defines the threshold limit for all the tests to pass. If the coverage is less than the defined limit, the tests would fail. This helped us to keep a good amount of coverage at all point of time.
+
+* `transformIgnorePatterns`: We pass all the NPM modules here which needs to be transpiled. These modules are basically ES6/7 modules.
